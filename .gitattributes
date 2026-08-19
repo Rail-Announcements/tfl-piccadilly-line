@@ -1,0 +1,13 @@
+# Upstream ships CRLF line endings. Normalising them would modify third-party source that
+# aptx100/NOTICE states is unmodified.
+aptx100/libaptx100/** -text
+aptx100/UPSTREAM-readme.txt -text
+
+# Two text objects on the card carry a trailing carriage return ("Mind Gap", "Keep
+# Belongings"). That is card data, so the generated listings are kept verbatim.
+extracted/*.txt -text
+
+# Decoded audio and the card image are binary.
+*.wav binary
+*.pcc binary
+*.pdf binary

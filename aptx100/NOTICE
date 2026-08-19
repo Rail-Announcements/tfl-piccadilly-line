@@ -1,0 +1,32 @@
+Third-party source in this directory
+====================================
+
+libaptx100/
+    Copyright (c) 2014-2026 Maxim V. Anisiutkin <maxim.anisiutkin@gmail.com>
+
+    Taken unmodified from the foobar2000 input plugin foo_input_apt-x100,
+    release 0.4.4, part of the "DVD-Audio Decoder and Watermark Detector"
+    project:
+
+        https://sourceforge.net/projects/dvdadecoder/
+        https://sourceforge.net/projects/dvdadecoder/files/foo_input_apt-x100/
+
+    That project declares its licence on its SourceForge page as "GNU Library or
+    Lesser General Public License version 2.0 (LGPLv2)". No licence file ships in
+    the release archive itself, and that label spans two distinct licences: the
+    GNU Library General Public License v2.0 and the GNU Lesser General Public
+    License v2.1. A copy of the LGPL v2.1 is included here as COPYING.LESSER;
+    if the exact version matters for your use, confirm it with the author.
+
+    No changes have been made to any file under libaptx100/. Files were copied
+    verbatim from the upstream archive's src/libaptx100/ directory. The upstream
+    release notes are preserved as UPSTREAM-readme.txt.
+
+    Upstream notes that the plugin "uses proprietary APT-x100 codec". APT-X100 is
+    a codec originally developed at Queen's University Belfast and commercialised
+    by Audio Processing Technology; the foundational patents (GB8803390, filed
+    1988) have long since expired.
+
+main.cpp, Makefile, README.md
+    Written for this project. A thin harness that feeds a PCC payload to the
+    decoder above and writes a WAV.
