@@ -1,6 +1,8 @@
 # APT-X100 decoder
 
 The audio on a PCC card is APT-X100. This directory holds a working decoder for it.
+For what the codec is and how it codes audio, see
+[What APT-X100 is](../docs/audio-format.md#what-apt-x100-is).
 
 ## Licence and attribution
 
@@ -65,8 +67,8 @@ so both sides of the comparison come from the same code path.
 `chmode 1` is not optional. APT-X100 can carry an auxiliary data channel, and it does so by
 taking the low bit of a sub-band away from the audio. A PCC card does that with band 3, so
 word bit 13 is data rather than audio and the decoder has to skip it. Leave the correction
-off and about 2.9% of samples clip, with roughly 76% of the output energy in 4-6 kHz. Turn
-it on and nothing clips, with about 96% of the energy in 0-2 kHz.
+off and a spoken announcement clips around 2.7% of its samples, with 78% of the output energy
+in 4-6 kHz. Turn it on and clipping almost disappears, with 98% of the energy in 0-2 kHz.
 
 For the measurements behind that, see
 [The stolen HF bit](../docs/audio-format.md#the-stolen-hf-bit).

@@ -54,7 +54,9 @@ def index_entries(card, first_page):
     """Yield (kind, page, crc) for every child of an object, following the page chain."""
     visited = set()
     number = first_page
-    while number and number not in visited:
+    # A zero link ends the chain, so the test comes after the page is read: page 0 is a
+    # valid start, and holds the master directory.
+    while number not in visited:
         visited.add(number)
         page = card.page(number)
         for offset in range(7, pcc.PAGE - 5, 6):
@@ -64,6 +66,8 @@ def index_entries(card, first_page):
             yield kind, page[offset + 1] | (page[offset + 2] << 8), \
                 page[offset + 4] | (page[offset + 5] << 8)
         number = page[4] | (page[5] << 8)
+        if not number:
+            break
 
 
 def tags_of(page):
@@ -76,11 +80,14 @@ def tags_of(page):
 
 
 def audio_objects(card):
-    """Map each audio object page to its payload pages, CRC status and metadata."""
+    """Map each audio object page to its payload pages, CRC status and metadata.
+
+    Objects come from the master directory. Scanning every page for one that starts with
+    TYPE_AUDIO finds the continuation pages of each object's index chain as well, and those
+    walk as a suffix of the object they belong to rather than as objects of their own.
+    """
     out = {}
-    for number in range(len(card.data) // pcc.PAGE):
-        if card.page(number)[0] != pcc.TYPE_AUDIO:
-            continue
+    for number in card.audio_pages():
         payload, meta, bad = [], {}, 0
         for kind, page, crc in index_entries(card, number):
             if kind == pcc.TYPE_PAYLOAD:
@@ -171,11 +178,18 @@ def main(argv=None):
     live = max(i for i, b in enumerate(card.data) if b != 0xFF) + 1
     total_pages = sum(len(o["payload"]) for o in objects.values())
     bad = sum(o["crc_failures"] for o in objects.values())
+    declared = [(len(o["payload"]), int(o["meta"]["payload_pages"][0], 16))
+                for o in objects.values() if o["meta"].get("payload_pages")]
+    agree = sum(1 for actual, claimed in declared if actual == claimed)
+    referenced = {f for e in entries for f in e["fragments"]}
+    with_audio = sum(1 for e in entries if e["fragments"])
     print(f"card           {len(card.data)} bytes, live to {live}")
     print(f"text objects   {len(texts)}")
-    print(f"audio objects  {len(objects)} ({total_pages} payload pages)")
+    print(f"audio objects  {len(objects)} ({total_pages} payload pages, "
+          f"{len(referenced)} referenced)")
     print(f"CRC failures   {bad}")
-    print(f"announcements  {len(entries)}")
+    print(f"page counts    {agree}/{len(declared)} match their declared value")
+    print(f"announcements  {len(entries)} ({with_audio} with audio)")
 
     for sub in ("announcements", "fragments"):
         os.makedirs(os.path.join(args.out, sub), exist_ok=True)
@@ -184,7 +198,7 @@ def main(argv=None):
         for page in sorted(texts):
             handle.write(f"{page:6d}  {texts[page]}\n")
 
-    written = {}
+    written, decoded = {}, 0
     if not args.no_audio:
         for number, obj in sorted(objects.items()):
             name = f"frag_{number:05d}"
@@ -203,7 +217,8 @@ def main(argv=None):
             for f in entry["fragments"] if f in objects)
         name = f"{entry['id']}_{safe(entry['text'])}.wav"
         if payload and not args.no_audio:
-            decode(args.decoder, payload, os.path.join(args.out, "announcements", name))
+            if decode(args.decoder, payload, os.path.join(args.out, "announcements", name)):
+                decoded += 1
         manifest.append(dict(
             id=entry["id"],
             text=entry["text"],
@@ -227,7 +242,7 @@ def main(argv=None):
             handle.write(f"{m['id']}  {m['seconds']:7.2f}s  {len(m['fragments'])} frag  {m['text']}\n")
 
     print(f"\nwritten to {args.out}/")
-    print(f"  announcements/  {len(manifest)} wav files")
+    print(f"  announcements/  {decoded} wav files")
     print(f"  fragments/      {len(written)} wav files")
     print(f"  manifest.json, index.txt, text.txt")
     return 0

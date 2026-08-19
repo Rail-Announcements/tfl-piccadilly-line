@@ -40,7 +40,9 @@ class Card:
         """Walk an object's page chain and yield its (type, page) entries in order."""
         visited = set()
         number = first_page
-        while number and number not in visited:
+        # A zero link ends the chain, so the test comes after the page is read: the master
+        # directory itself starts at page 0.
+        while number not in visited:
             visited.add(number)
             page = self.page(number)
             for offset in range(7, PAGE - 5, 6):
@@ -49,14 +51,35 @@ class Card:
                     continue
                 yield kind, page[offset + 1] | (page[offset + 2] << 8)
             number = page[4] | (page[5] << 8)
+            if not number:
+                break
 
     def index_pages(self, first_page):
         visited = []
         number = first_page
-        while number and number not in visited:
+        while number not in visited:
             visited.append(number)
             number = self.page(number)[4] | (self.page(number)[5] << 8)
+            if not number:
+                break
         return visited
+
+    def directory(self):
+        """Yield the (type, page) entries of the master index."""
+        root = next((n for n in range(len(self.data) // PAGE)
+                     if self.page(n)[0] == TYPE_DIRECTORY), None)
+        if root is None:
+            return
+        yield from self.entries(root)
+
+    def audio_pages(self):
+        """Return every audio object page, in directory order.
+
+        Scanning for pages that start with TYPE_AUDIO finds more than this: an object's index
+        chain continues onto further pages, and each of those starts with TYPE_AUDIO too.
+        Walking one of them yields a suffix of the object it belongs to, not a new object.
+        """
+        return [page for kind, page in self.directory() if kind == TYPE_AUDIO]
 
     def fragment(self, audio_page):
         """Return the payload bytes of a type 0x05 audio object."""
@@ -128,7 +151,7 @@ def cmd_extract(args):
         details = []
         for page_number in entry["fragments"]:
             data, pages = card.fragment(page_number)
-            name = f"frag_{page_number:04x}.bin"
+            name = f"frag_{page_number:05d}.bin"
             if name not in written:
                 with open(os.path.join(frags, name), "wb") as handle:
                     handle.write(data)
@@ -162,16 +185,17 @@ def cmd_info(args):
     card = load(args.card)
     live = max(i for i, b in enumerate(card.data) if b != 0xFF) + 1
     entries = list(card.announcements())
-    fragments = {p for e in entries for p in e["fragments"]}
-    sizes = sorted(len(card.fragment(p)[0]) for p in fragments)
+    objects = card.audio_pages()
+    referenced = {p for e in entries for p in e["fragments"]}
+    sizes = sorted(len(card.fragment(p)[0]) for p in objects)
     scattered = sum(
         0 if (pages := card.fragment(p)[1]) == list(range(pages[0], pages[0] + len(pages))) else 1
-        for p in fragments
+        for p in objects
     )
     print(f"card size        {len(card.data)} bytes")
     print(f"live data        {live} bytes (rest is erased 0xFF)")
-    print(f"announcements    {len(entries)}")
-    print(f"fragments        {len(fragments)}")
+    print(f"announcements    {len(entries)} with audio")
+    print(f"fragments        {len(objects)} ({len(referenced)} referenced by an announcement)")
     print(f"  scattered      {scattered} have non-contiguous payload pages")
     print(f"  bytes          min {sizes[0]}, median {sizes[len(sizes) // 2]}, max {sizes[-1]}")
 

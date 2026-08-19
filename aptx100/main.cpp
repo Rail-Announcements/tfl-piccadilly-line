@@ -1,6 +1,6 @@
 // Decode a PCC audio payload with the reference APT-X100 implementation.
 //
-// Usage: aptxdec <payload.bin> <out.wav> [msb] [channels] [chmode] [buffers]
+// Usage: aptxdec <payload.bin> <out.wav> [msb] [channels] [chmode] [buffers] [auxwin]
 //   msb      1 to byte-swap each aptX word before decoding (big-endian stream)
 //   channels 1 for mono, 2 to treat the stream as interleaved stereo
 //   chmode   1 to enable the band-3 bit correction (a PCC card needs this)
@@ -8,7 +8,7 @@
 //   auxwin   -1 stock decode (default); 0 same, via the manual loop; 1 or 2 apply the
 //            band-1 correction over words 117-127 or 117-126 of each 128-word page
 //
-// A PCC payload needs 1 1 1 -1. See ../docs/audio-format.md.
+// A PCC payload needs 1 1 1 -1 1. See ../docs/audio-format.md.
 
 #include <cstdio>
 #include <cstdlib>

@@ -1,0 +1,320 @@
+0001     1.73s  1 frag  Please stand clear of the doors
+0002     2.53s  1 frag  Let customers off first please
+0003     2.18s  1 frag  Please move right down inside the cars
+0004     3.01s  1 frag  Please mind the gap between the train and the platform
+0005     6.02s  3 frag  This train terminates here.  All change.Please ensure that you take all your personal belongings with you
+0006     3.74s  1 frag  Please remember to keep all your personal belongings with you at all times
+0007     9.73s  2 frag  Please remember to keep all your personal belongings with you at all times. Report any unattended item or suspicious behaviour to a member of staff or a police officer
+0008     1.95s  1 frag  The next station is closed
+0009     7.14s  2 frag  Because of a security alert, the next station has been closed and evacuated.  Piccadilly Line trains will not stop
+000A     7.23s  2 frag  Heathrow Terminal 4 station is closed.This train will terminate at Heathrow Terminals 1, 2 and 3
+000B    15.81s  2 frag  Because of a security alert at Terminal 4 station, this train will call at Heathrow Terminals 1, 2 and 3 only. Customers for Terminal 4 should remain on this train to Heathrow Terminals 1, 2 and 3 where alternative transfer arrangements
+000C     7.01s  2 frag  Heathrow Terminal 5 station is closed. This train will terminate at Heathrow Terminals 1, 2 and 3.
+000D    15.97s  2 frag  Because of a security alert at Terminal 5 station, this train will call at Heathrow Terminals 1, 2 and 3 only.  Customers for Terminal 5 should remain on this train to Heathrow Terminals 1, 2 and 3, where alternative transfer arrangements
+000E     7.04s  2 frag  Heathrow Terminals 1, 2 and 3 station is closed. This train will terminate at Heathrow Terminal 5.
+000F    16.77s  2 frag  Because of a security alert at Terminals 1, 2 and 3 station, this train will call at Heathrow Terminal 5 only.  Customers for Terminals 1, 2 and 3 should remain on this train to Heathrow Terminal 5, where alternative transfer arrangements
+0010     6.94s  2 frag  There is a restricted lift service at the next station and customers may experience some delay upon leaving the station
+0011     7.23s  2 frag  There is a restricted escalator service at the next station and customers may experience some delay upon leaving the station
+0012    13.79s  4 frag  Attention. This train is about to move slowly forward and then stop suddenly. Please hold on tight
+0013    10.21s  4 frag  This train is being delayed due to signalling difficulties. We will keep you informed as information becomes available. We apologise for any inconvenience this may cause
+0014    10.18s  4 frag  This train is being delayed due to technical difficulties. We will keep you informed as information becomes available. We apologise for any inconvenience this may cause
+0015    10.37s  4 frag  This train is being delayed due to adverse weather conditions. We will keep you informed as information becomes available. We apologise for any inconvenience this may cause
+0016    10.78s  4 frag  This train is being delayed due to circumstances beyond our control. We will keep you informed as information becomes available. We apologise for any inconvenience this may cause
+0017    10.66s  4 frag  This train is being delayed due to an incident earlier in the day. We will keep you informed as information becomes available. We apologise for any inconvenience this may cause
+0018    10.50s  4 frag  This train is being delayed due to essential engineering work. We will keep you informed as information becomes available. We apologise for any inconvenience this may cause
+0019     4.90s  1 frag  This train will be held here for a short time to even out the gaps in the service
+001A     6.08s  2 frag  A passenger alarm has been operated on this train. There will be a delay whilst investigations are made
+001B     7.30s  2 frag  This train will call additionally at Ravenscourt Park, Stamford Brook, Turnham Green and Chiswick Park
+001C     7.36s  2 frag  This train will call additionally at Chiswick Park, Turnham Green, Stamford Brook and Ravenscourt Park
+001D     4.58s  1 frag  For safety reasons, smoking is not permitted on any part of London Underground
+001E     5.70s  2 frag  There are beggars and buskers operating on this train. Please do not encourage their presence by supporting them
+001F     2.18s  1 frag  NOT IN SERVICE
+0020    10.62s  3 frag  This train has a defect, and is being withdrawn from service. Please remain on the platform, and await further information. London Underground apologise for any inconvenience caused
+0021     7.90s  3 frag  Attention. This train and station are now being evacuated. Please leave the train and follow staff's instructions to exit the station
+0022     4.06s  3 frag  Attention. Please leave the train now. Please leave the train now
+0049     2.18s  1 frag  NOT IN SERVICE
+0061     0.00s  0 frag  @@@@@@@@@@@@@
+0062     2.27s  1 frag  Sign test.Test Complete!
+0063     0.96s  1 frag  WALK THROUGH
+0065     1.95s  2 frag  This is Cockfosters
+0067     1.57s  2 frag  This is Oakwood
+0068     1.76s  2 frag  This is Southgate
+0069     1.86s  2 frag  This is Arnos Grove
+006B     1.86s  2 frag  This is Bounds Green 
+006C     1.73s  2 frag  This is Wood Green
+006D     2.02s  2 frag  This is Turnpike Lane
+006E     1.95s  2 frag  This is Manor House
+006F     1.95s  2 frag  This is Finsbury Park
+0070     1.60s  2 frag  This is Arsenal
+0071     1.86s  2 frag  This is Holloway Road
+0072     2.08s  2 frag  This is Caledonian Road
+0073     2.50s  2 frag  This is King's Cross, St. Pancras
+0074     1.92s  2 frag  This is Russell Square
+0075     1.63s  2 frag  This is Holborn
+0076     1.89s  2 frag  This is Covent Garden
+0077     1.86s  2 frag  This is Leicester Square
+0078     2.18s  2 frag  This is Piccadilly Circus
+0079     1.79s  2 frag  This is Green Park
+007A     1.95s  2 frag  This is Hyde Park Corner
+007B     1.82s  2 frag  This is Knightsbridge
+007C     2.11s  2 frag  This is South Kensington
+007D     1.89s  2 frag  This is Gloucester Road
+007E     1.86s  2 frag  This is Earl's Court
+007F     1.95s  2 frag  This is Barons Court
+0080     1.70s  2 frag  This is Hammersmith
+0081     2.14s  2 frag  This is Ravenscourt Park
+0082     2.05s  2 frag  This is Stamford Brook
+0083     1.89s  2 frag  This is Turnham Green
+0084     1.92s  2 frag  This is Chiswick Park
+0085     1.92s  2 frag  This is Acton Town
+0086     1.89s  2 frag  This is South Ealing
+0087     1.95s  2 frag  This is Northfields
+0089     1.92s  2 frag  This is Boston Manor
+008A     1.70s  2 frag  This is Osterley
+008B     1.95s  2 frag  This is Hounslow East
+008C     2.02s  2 frag  This is Hounslow Central
+008D     2.02s  2 frag  This is Hounslow West
+008E     1.86s  2 frag  This is Hatton Cross
+008F     2.34s  2 frag  This is Heathrow Terminal 4
+0090     3.20s  2 frag  This is Heathrow Terminals 1,2 and 3
+0091     2.43s  2 frag  This is Heathrow Terminal 5
+0092     1.92s  2 frag  This is Ealing Common
+0093     2.02s  2 frag  This is Ealing Broadway
+0094     1.86s  2 frag  This is North Ealing
+0095     1.76s  2 frag  This is Park Royal
+0096     1.76s  2 frag  This is Alperton
+0097     2.02s  2 frag  This is Sudbury Town
+0098     1.98s  2 frag  This is Sudbury Hill
+009A     1.95s  2 frag  This is South Harrow
+009B     1.92s  2 frag  This is Rayners Lane
+009C     1.66s  2 frag  This is Eastcote
+009D     1.98s  2 frag  This is Ruislip Manor
+009E     1.63s  2 frag  This is Ruislip
+00A0     1.57s  2 frag  This is Ickenham
+00A1     1.79s  2 frag  This is Hillingdon
+00A3     1.79s  2 frag  This is Uxbridge
+00A4     2.11s  2 frag  This is West Kensington
+00A5     2.30s  2 frag  This is High Street Kensington
+00C9     2.75s  2 frag  The next station is Cockfosters
+00CB     2.37s  2 frag  The next station is Oakwood
+00CC     2.56s  2 frag  The next station is Southgate
+00CD     2.66s  2 frag  The next station is Arnos Grove
+00CF     2.66s  2 frag  The next station is Bounds Green
+00D0     2.53s  2 frag  The next station is Wood Green
+00D1     2.82s  2 frag  The next station is Turnpike Lane
+00D2     2.75s  2 frag  The next station is Manor House
+00D3     2.75s  2 frag  The next station is Finsbury Park
+00D4     2.40s  2 frag  The next station is Arsenal
+00D5     2.66s  2 frag  The next station is Holloway Road
+00D6     2.88s  2 frag  The next station is Caledonian Road
+00D7     3.30s  2 frag  The next station is King's Cross, St. Pancras
+00D8     2.72s  2 frag  The next station is Russell Square
+00D9     2.43s  2 frag  The next station is Holborn
+00DA     2.69s  2 frag  The next station is Covent Garden
+00DB     2.66s  2 frag  The next station is Leicester Square
+00DC     2.98s  2 frag  The next station is Piccadilly Circus
+00DD     2.59s  2 frag  The next station is Green Park
+00DE     2.75s  2 frag  The next station is Hyde Park Corner
+00DF     2.62s  2 frag  The next station is Knightsbridge
+00E0     2.91s  2 frag  The next station is South Kensington
+00E1     2.69s  2 frag  The next station is Gloucester Road
+00E2     2.66s  2 frag  The next station is Earl's Court
+00E3     2.75s  2 frag  The next station is Barons Court
+00E4     2.50s  2 frag  The next station is Hammersmith
+00E5     2.94s  2 frag  The next station is Ravenscourt Park
+00E6     2.85s  2 frag  The next station is Stamford Brook
+00E7     2.69s  2 frag  The next station is Turnham Green
+00E8     2.72s  2 frag  The next station is Chiswick Park
+00E9     2.72s  2 frag  The next station is Acton Town
+00EA     2.69s  2 frag  The next station is South Ealing**
+00EB     2.75s  2 frag  The next station is Northfields
+00ED     2.72s  2 frag  The next station is Boston Manor
+00EE     2.50s  2 frag  The next station is Osterley
+00EF     2.75s  2 frag  The next station is Hounslow East
+00F0     2.82s  2 frag  The next station is Hounslow Central
+00F1     2.82s  2 frag  The next station is Hounslow West
+00F2     2.66s  2 frag  The next station is Hatton Cross
+00F3     3.14s  2 frag  The next station is Heathrow Terminal 4
+00F4     4.00s  2 frag  The next station is Heathrow Terminals 1,2 and 3
+00F5     3.23s  2 frag  The next station is Heathrow Terminal 5
+00F6     2.72s  2 frag  The next station is Ealing Common
+00F7     2.82s  2 frag  The next station is Ealing Broadway
+00F8     2.66s  2 frag  The next station is North Ealing
+00F9     2.56s  2 frag  The next station is Park Royal
+00FA     2.56s  2 frag  The next station is Alperton
+00FB     2.82s  2 frag  The next station is Sudbury Town
+00FC     2.78s  2 frag  The next station is Sudbury Hill
+00FE     2.75s  2 frag  The next station is South Harrow
+00FF     2.72s  2 frag  The next station is Rayners Lane
+0100     2.46s  2 frag  The next station is Eastcote
+0101     2.78s  2 frag  The next station is Ruislip Manor
+0102     2.43s  2 frag  The next station is Ruislip
+0104     2.37s  2 frag  The next station is Ickenham
+0105     2.59s  2 frag  The next station is Hillingdon
+0107     2.59s  2 frag  The next station is Uxbridge
+0108     2.91s  2 frag  The next station is West Kensington
+0109     3.10s  2 frag  The next station is High Street Kensington
+012D     6.30s  3 frag  This train will terminate.
+012E     6.02s  3 frag  Train terminates here.
+0190     4.51s  3 frag  Interchange 00
+0191     9.28s  6 frag  Interchange 01
+0192     2.53s  2 frag  Interchange 02
+0193     2.53s  2 frag  Interchange 03
+0194     2.59s  2 frag  Interchange 04
+0195     3.52s  2 frag  Interchange 05
+0196     3.17s  2 frag  Interchange 06
+0197     2.50s  2 frag  Interchange 07
+0198     2.62s  2 frag  Interchange 08
+0199     4.03s  2 frag  Interchange 09
+019A     5.76s  3 frag  Interchange 10
+019B     9.34s  5 frag  Interchange 11
+019C     9.47s  5 frag  Interchange 12
+019D     9.44s  4 frag  Interchange 13
+019E    10.59s  5 frag  Interchange 14
+019F    10.62s  4 frag  Interchange 15
+01A0     7.74s  4 frag  Interchange 16
+01A1     9.25s  4 frag  Interchange 17
+01A2     2.82s  2 frag  Interchange 18
+01A3     6.72s  4 frag  Interchange 19
+01A4     8.45s  5 frag  Interchange 20
+01A5     6.75s  4 frag  Interchange 21
+01A6     8.26s  5 frag  Interchange 22
+01A7     7.36s  3 frag  Interchange 23
+01A8     9.12s  4 frag  Interchange 24
+01A9     2.69s  2 frag  WALK THROUGH
+01C2     4.26s  3 frag  Interchange 50
+01C3     9.02s  6 frag  Interchange 51
+01C4     2.27s  2 frag  Interchange 52
+01C5     2.27s  2 frag  Interchange 53
+01C6     2.34s  2 frag  Interchange 54
+01C7     3.26s  2 frag  Interchange 55
+01C8     2.91s  2 frag  Interchange 56
+01C9     2.24s  2 frag  Interchange 57
+01CA     2.37s  2 frag  Interchange 58
+01CB     3.78s  2 frag  Interchange 59
+01CC     5.50s  3 frag  Interchange 60
+01CD     8.77s  5 frag  Interchange 61
+01CE    12.10s  7 frag  Interchange 62
+01CF    11.49s  6 frag  Interchange 63
+01D0    12.67s  6 frag  Interchange 64
+01D1    12.00s  7 frag  Interchange 65
+01D2     3.74s  2 frag  Interchange 66
+01D3    10.66s  6 frag  Interchange 67
+01D4    11.49s  6 frag  Interchange 68
+01D5     5.44s  3 frag  Interchange 69
+01D6    13.18s  6 frag  Interchange 70
+01D7     2.56s  2 frag  Interchange 71
+01D8     9.02s  4 frag  Interchange 72
+01D9     2.43s  2 frag  WALK THROUGH
+01F4     3.01s  1 frag  Safety 00
+01F5     3.74s  1 frag  Safety 01
+0258     3.78s  2 frag  Local 00
+0259     2.56s  2 frag  Local 01
+025A     3.04s  2 frag  Local 02
+025B     2.40s  2 frag  Local 03
+025D     3.49s  2 frag  Local 05
+025E     2.94s  2 frag  Local 06
+028A     3.55s  2 frag  Local 50
+028B     2.34s  2 frag  Local 51
+028C     2.82s  2 frag  Local 52
+028D     2.18s  2 frag  Local 53
+028F     3.26s  2 frag  Local 55
+0290     2.72s  2 frag  Local 56
+02BD     3.87s  2 frag  Piccadilly Line to Cockfosters
+02BF     3.49s  2 frag  Piccadilly Line to Oakwood
+02C0     3.68s  2 frag  Piccadilly Line to Southgate
+02C1     3.78s  2 frag  Piccadilly Line to Arnos Grove
+02C3     3.78s  2 frag  Piccadilly Line to Bounds Green 
+02C4     3.65s  2 frag  Piccadilly Line to Wood Green
+02C5     3.94s  2 frag  Piccadilly Line to Turnpike Lane
+02C6     3.87s  2 frag  Piccadilly Line to Manor House
+02C7     3.87s  2 frag  Piccadilly Line to Finsbury Park
+02C8     3.52s  2 frag  Piccadilly Line to Arsenal
+02C9     3.78s  2 frag  Piccadilly Line to Holloway Road
+02CA     4.00s  2 frag  Piccadilly Line to Caledonian Road
+02CB     4.42s  2 frag  Piccadilly Line to King's Cross, St. Pancras
+02CC     3.84s  2 frag  Piccadilly Line to Russell Square
+02CD     3.55s  2 frag  Piccadilly Line to Holborn
+02CE     3.81s  2 frag  Piccadilly Line to Covent Garden
+02CF     3.78s  2 frag  Piccadilly Line to Leicester Square
+02D0     4.10s  2 frag  Piccadilly Line to Piccadilly Circus
+02D1     3.71s  2 frag  Piccadilly Line to Green Park
+02D2     3.87s  2 frag  Piccadilly Line to Hyde Park Corner
+02D3     3.74s  2 frag  Piccadilly Line to Knightsbridge
+02D4     4.03s  2 frag  Piccadilly Line to South Kensington
+02D5     3.81s  2 frag  Piccadilly Line to Gloucester Road
+02D6     3.78s  2 frag  Piccadilly Line to Earl's Court
+02D7     3.87s  2 frag  Piccadilly Line to Barons Court
+02D8     3.62s  2 frag  Piccadilly Line to Hammersmith
+02D9     4.06s  2 frag  Piccadilly Line to Ravenscourt Park
+02DA     3.97s  2 frag  Piccadilly Line to Stamford Brook
+02DB     3.81s  2 frag  Piccadilly Line to Turnham Green
+02DC     3.84s  2 frag  Piccadilly Line to Chiswick Park
+02DD     3.84s  2 frag  Piccadilly Line to Acton Town
+02DE     3.81s  2 frag  Piccadilly Line to South Ealing
+02DF     3.87s  2 frag  Piccadilly Line to Northfields
+02E1     3.84s  2 frag  Piccadilly Line to Boston Manor
+02E2     3.62s  2 frag  Piccadilly Line to Osterley
+02E3     3.87s  2 frag  Piccadilly Line to Hounslow East
+02E4     3.94s  2 frag  Piccadilly Line to Hounslow Central
+02E5     3.94s  2 frag  Piccadilly Line to Hounslow West
+02E6     3.78s  2 frag  Piccadilly Line to Hatton Cross
+02E7     4.26s  2 frag  Piccadilly Line to Heathrow Terminal 4
+02E8     5.12s  2 frag  Piccadilly Line to Heathrow Terminals 1,2 and 3
+02E9     4.35s  2 frag  Piccadilly Line to Heathrow Terminal 5
+02EA     3.84s  2 frag  Piccadilly Line to Ealing Common
+02EB     3.94s  2 frag  Piccadilly Line to Ealing Broadway
+02EC     3.78s  2 frag  Piccadilly Line to North Ealing
+02ED     3.68s  2 frag  Piccadilly Line to Park Royal
+02EE     3.68s  2 frag  Piccadilly Line to Alperton
+02EF     3.94s  2 frag  Piccadilly Line to Sudbury Town
+02F0     3.90s  2 frag  Piccadilly Line to Sudbury Hill
+02F2     3.87s  2 frag  Piccadilly Line to South Harrow
+02F3     3.84s  2 frag  Piccadilly Line to Rayners Lane
+02F4     3.58s  2 frag  Piccadilly Line to Eastcote
+02F5     3.90s  2 frag  Piccadilly Line to Ruislip Manor
+02F6     3.55s  2 frag  Piccadilly Line to Ruislip
+02F8     3.49s  2 frag  Piccadilly Line to Ickenham
+02F9     3.71s  2 frag  Piccadilly Line to Hillingdon
+02FB     3.71s  2 frag  Piccadilly Line to Uxbridge
+02FC     4.03s  2 frag  Piccadilly Line to West Kensington
+02FD     4.22s  2 frag  Piccadilly Line to High Street Kensington
+02FE     5.73s  2 frag  Piccadilly Line to Heathrow Terminals 1, 2, 3 and 5
+02FF     5.92s  2 frag  Piccadilly Line to Heathrow Terminals 4 and 1, 2, 3
+0385   300.16s  10 frag  System Sound Test
+0386     9.70s  1 frag  Speaker Impedance Test
+0387    60.03s  2 frag  MLSSA Performance Test
+0388     0.00s  0 frag  RASTI Performance Test
+0389     2.37s  1 frag  Cab intruder circuit open
+038A     2.56s  1 frag  Cab intruder circuit closed
+038B     2.30s  1 frag  Saloon Intruder circuit open
+038C     2.40s  1 frag  Saloon Intruder circuit closed
+038D     4.06s  1 frag  PA train wire test - silent announcement
+038E     2.59s  1 frag  Alarm Handle operated in vestibule..
+038F     0.58s  1 frag  A
+0390     0.58s  1 frag  B
+0391     0.74s  1 frag  C
+0392     0.70s  1 frag  D
+0399     0.77s  1 frag  Car..
+039A     0.77s  1 frag  1
+039B     0.67s  1 frag  2
+039C     0.83s  1 frag  3
+039D     0.77s  1 frag  4
+039E     0.99s  1 frag  5
+039F     0.83s  1 frag  6
+03A0     2.34s  1 frag  Talk-back confirmed in car..
+03A2     5.54s  6 frag  Test announcement 1
+03A3     6.27s  6 frag  Test announcement 2
+03A4     6.78s  6 frag  Test announcement 3
+03A5     6.24s  6 frag  Test announcement 4
+03A6     6.46s  6 frag  Test announcement 5
+03A7     6.14s  6 frag  Test announcement 6
+03A8     8.16s  6 frag  Test announcement 7
+03A9     6.30s  6 frag  Test announcement 8
+03AA     5.38s  6 frag  Test announcement 9
+03AB     9.12s  6 frag  Test announcement 10
+03AC     5.38s  1 frag  Walk Test automatic shutdown warning
+03AD     2.50s  1 frag  Cab Alarm operated in car..
+03AE     2.18s  1 frag  Cab Alarm reset in car..
+13B9     0.00s  0 frag  Mind Gap
+13BA     0.00s  0 frag  Keep Belongings
